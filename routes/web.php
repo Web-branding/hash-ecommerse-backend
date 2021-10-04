@@ -87,7 +87,6 @@ Route::get('transaction', [CategoryController::class, 'transaction'])->name('tra
 
 Route::get('download', [TransactionController::class, 'downloadPDF'])->name('download-orders');
 
-
-//test
+//payment
 Route::get('paywithrazorpay', [TransactionController::class,'payWithRazorpay'])->name('paywithrazorpay');
 Route::post('payment', [TransactionController::class,'paymenttt'])->name('payment');
